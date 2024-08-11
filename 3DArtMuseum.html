@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>3D Art Museum</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+		<link rel="stylesheet" type="text/css" href="3DArtMuseum.css">
+	</head>
+	<body>
+		<div id="pleasewait"><table><tr><td><img src="3DArtMuseum.png" alt="logo"/><br/><br/>BIENVENIDA AL MUSEO DE NUESTRA HISTORIA DE AMOR</b>.<br/><br/>I LOVE YOU </td></tr></table><div id="pleasewaitcontainer"><div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div></div>
+		<div id="buttonenter"><div>Comenzar la visita virtual</div></div>
+		<div id="content"><div id="container"></div></div>
+		<div id="controls"><div id="controls_minus"></div><div id="controls_plus"></div></div>
+		<div id="info"><div id="infotext"></div></div>
+		<div id="about">Feliz 13 meses</div>
+
+		<script src="3DArtMuseumPleaseRotate.js"></script>
+		<script src="3DArtMuseum.js"></script>
+		<script>
+
+			drawRoom();
+
+			addToLeft(35,  200, "Art_01.jpg", "Art_01.mp3", "Ojitos lindos: Eres una obra de arte, de pies a cabeza. Me encanta todo de ti, en especial, esos dos bonitos ojos que tienes. Siempre me dices que te gustan mis ojos pero no sabes que los tuyos también me encantan. Amo verlos cada que salimos. Curioso que en esta foto pueda verme reflejado en uno de ellos.");
+			addToLeft(22,  125, "Art_02.jpg", "Art_02.mp3", "Same vibes: Me gusta esta foto porque me genera las mismas vibras que la foto de la derecha.");
+			addToLeft(20,   50, "Art_03.jpg", "Art_03.mp3", "Salida después de la universidad: La primera vez que fui a recogerte a la universidad. Se sintió bonito poder cumplir con la promesa de algún día poderte recoger de la universidad.");
+			addToLeft(46,  -50, "Art_04.jpg", "Art_04.mp3", "Encuentro espontáneo: Quiero agradecerte por ese día en el que te escapaste un ratito de tu casa para irme a ver a casa de Yadira. De verdad, me pareció un gesto bonito. Sinceramente, estaba un poco triste porque pensé que me iría a Lima sin verte una vez más. Y de pronto, apareciste espontáneamente. Verte aunque sea unos minutos me hace muy feliz.");
+			addToLeft(28, -160, "Art_05.jpg", "Art_05.mp3", "En un universo paralelo: Me gusta imaginar que en un universo paralelo al nuestro sí pudimos ir a la universidad juntos. Por eso, esta foto me gusta mucho, porque es una imagen de nuestro universo que representa aquello que imagino siempre. Me sentí muy feliz en ese momento. Caminar juntos por tu universidad es una de las cosas que siempre haría.");
+
+			addToFront(40, -320, "Art_06.jpg", "Art_06.mp3", "Tus besos: Una de las cosas que más amo cuando estamos juntos son tus besitos en el cachete. Aunque últimamente también me gusta mucho cómo los muerdes. En esta salida recuerdo que pasamos el tiempo juntos en un parque conversando y comiendo una carrot cake que compramos. Me parece tierno y amo cómo es que tratamos siempre de combinar outfits. En esta foto no se nota tanto eso pero recuerdo que coordinamos cómo ir vestidos y aún así no combinó del todo. Posdata: Qué tierno, aún así, mi camisa y tu polo sí combinan.");
+			addToFront(27, -250, "Art_07.jpg", "Art_07.mp3", "Primer desayuno juntos: Recuerdo que ese día estuve muy ansioso ya que usualmente cuando viajo a Piura me quedo en casa de mis abuelos y días después recién podemos vernos. Pero ese día fue diferente porque sabía que apenas llegase iba a poder verte. Me encantó poder desayunar contigo por primera vez. Me encantó poder verte desde la mañana en la universidad.");
+			addToFront(53, -170, "Art_08.jpg", "Art_08.mp3", "Día de Picnic: Después de haberlo planificado mucho, por fin se dió ese día en el que pudimos hacer el picnic que tanto queríamos. Sin duda, una de las mejores salidas que tuvimos. Compramos las cosas juntos, nos tomamos muchas fotos, celebramos tu cumple adelantado, jugamos, pegamos fotos en nuestro álbum, nos casamos y muchas cosas más. ");
+			addToFront(47,  -80, "Art_09.jpg", "Art_09.mp3", "Salida con amigos: Una de las pocas veces en las que salimos con el grupito. Espero que algún día podamos salir juntos de nuevo.");
+			addToFront(36,    0, "Art_10.jpg", "Art_10.mp3", "La primera salida: Sé que ya te lo he dicho antes pero ese fue uno de los días más felices de mi vida y que siempre recordaré de forma especial. Verte por primera vez, después de llevar una relación a distancia, es una de las cosas más reconfortantes que pueden existir en esta vida. Y el primer beso, jamás olvidaré nuestro primer beso, aquel beso en el que tomaste la iniciativa. Me pareció muy tierno. Estaba muy nervioso ese día pero sobretodo, estaba muy feliz.");
+
+			addToRight(47, -160, "Art_11.jpg", "Art_11.mp3", "Nuestras miradas: Qué bonito cuando nos tomamos fotos así, tiernas y espontáneas. Sé que a ambos nos gusta los ojitos del otro. Por eso, qué mejor imagen que ésta para representar aquello. Además, me gusta sentir cómo tus cachetitos se juntan con los míos al momento que nos tomamos fotos así.");
+			addToRight(50,  -50, "Art_12.jpg", "Art_12.mp3", "Un día en la universidad: Recuerdo esta imagen y el momento exacto en el que la tomaste. Me encantó visitar tu universidad y conocer el lugar donde estudias pero sobretodo, me gustó pasar el día contigo. Me gustó acompañarte mientras estudiabas programación. Qué bonita te ves mientras estudias.");
+			addToRight(37,   50, "Art_13.jpg", "Art_13.mp3", "El café: Parece que tomar café juntos es una de las actividades que hacemos con más frecuencia de la que parece. Me encanta poder disfrutar momentos así contigo, se siente un poco más de calidez y tranquilidad. Por cierto, aún nos falta probar muchos cafés, tenemos que probar todos los sabores y tipos.");
+			addToRight(26,  125, "Art_14.jpg", "Art_14.mp3", "El sunset: En ésta imagen hay dos cosas que me encantan. La primera, los besitos que me das en el cachete. Y lo segundo, es lo bien que nos queda la luz del sol en el atardecer. Me encantó esta salida. Pudimos jugar Uno y fuimos a un café, unos de los lugares que se ha vuelto uno de nuestros favoritos al parecer.");
+			addToRight(21,  200, "Art_15.jpg", "Art_15.mp3", "Paz y tranquilidad:Así es como me sentí en ese momento. Mirar el mar junto a ti me genera mucha paz y se ha convertido en una de mis actividades favoritas. De hecho, me pasaría todo el día mirándolo junto a ti. Además, cada que veo esta foto, se viene a mi mente esta canción.");
+
+			addToBack(42,    0, "Art_16.jpg", "Art_16.mp3", "Un día en la playa: Siempre hemos querido ir a la playa juntos y al fin pudimos cumplirlo. Será una de las tantas veces que iremos juntos. Este día no pudimos disfrutar del sol pero estoy seguro de que ya tendremos la oportunidad de disfrutar de un día soleado en la playa. Por cierto, ver el mar en un atardecer es como estar contigo, ambas cosas me generan mucha paz.");
+			addToBack(42,  -80, "Art_17.jpg", "Art_17.mp3", "Mi solecito: Siempre te he dicho que eres mi solecito y no me cansaré de recordártelo. Eres mi solecito porque iluminas mi vida y porque siempre te ves radiante a pesar de la vida difícil que te tocó. Qué mejor imagen que ver a mi solecito en la playa. La combinación perfecta.");
+			addToBack(25, -170, "Art_18.jpg", "Art_18.mp3", "Primer día en la universidad: Ese día ingresé a tu universidad por primera vez. Recuerdo que fue para recibir una charla de becarios. Me gustó mucho, me sentía emocionado al pensar que estaba caminando por los mismo lugares por los que camina mi novia todos los días que tiene clases. Amé estar junto a ti en un mismo salón escuchando la charla y luego ir a un café a disfrutar del momento. Posdata: Qué bonito te quedan los vestidos.");
+			addToBack(42, -250, "Art_19.jpg", "Art_19.mp3", "First coffee: El primer café que visitamos juntos. Fue una experiencia bonita y un poco divertida porque no sabíamos lo amargo que podía llegar a ser un café. Ya aprendimos, y eso es lo que me gusta, que podamos tener experiencias en la que ambos podamos aprender, divertirnos y descubrir cosas que no conocíamos.");
+			addToBack(27, -320, "Art_20.jpg", "Art_20.mp3", "Mi modelo de revista: Sé que a veces ciertos comentarios que escuchas sobre tu aspecto físico te pueden generar inseguridades o hacerte sentir mal. Pero créeme, esas personas no te ven como te veo yo. No te ven como en realidad eres ¿Y qué eres? Una Diosa, justo eso es lo que eres. Me encanta ésta foto porque posas tal cual como una modelo.");
+
+			renderRoom();
+
+			welcome("Welcome.mp3", "Bienvenida al museo de nuestra historia. Aquí encontrarás muchos recuerdos que hemos creado juntos a lo largo de este tiempo. Espero que te guste esta visita virtual. Haz click en cada imagen para ver más información.");
+
+		</script>
+	</body>
+</html>
